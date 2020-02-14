@@ -4,8 +4,12 @@
   "description": "Template project for documenting with Markdown",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "markdownlint . --ignore node_modules"
   },
   "author": "Davis Freimanis",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "markdown-link-checker": "^1.0.0",
+    "markdownlint-cli": "^0.22.0"
+  }
 }
